@@ -4,6 +4,7 @@
 #ifndef test
 #define test
 #include "Ex4.h"
+#include "heapFunc.cpp"
 #endif
 
 typedef struct _NODE_ {
@@ -12,8 +13,8 @@ typedef struct _NODE_ {
 } stack, *pstack;
 pstack newNode(char *newText)
 {
-    pstack st = (pstack)malloc(sizeof(stack));
-    st->txt = (char*)malloc(sizeof(char)*MAXDATASIZE);
+    pstack st = (pstack)my_malloc(sizeof(stack));
+    st->txt = (char*)my_malloc(sizeof(char)*MAXDATASIZE);
     strcpy(st->txt, newText);
     st->next = NULL;
     return st;
@@ -36,7 +37,7 @@ char* TOP(pstack st)
     {
         perror("the stack is empty");
     }
-    char *temp = (char*)malloc(sizeof(char)*MAXDATASIZE);
+    char *temp = (char*)my_malloc(sizeof(char)*MAXDATASIZE);
     strcpy(temp, st->txt);
     return temp;
 }
@@ -49,10 +50,10 @@ char* POP(pstack *st)
     }
     pstack temp = *st;
     *st = (*st)->next;
-    char* popped = (char*)malloc(sizeof(char)*MAXDATASIZE);
+    char* popped = (char*)my_malloc(sizeof(char)*MAXDATASIZE);
     strcpy(popped, temp->txt);
-    free(temp->txt);
-    free(temp);
+    my_free(temp->txt);
+    my_free(temp);
     pthread_mutex_unlock(&lock);
     return popped;
 }

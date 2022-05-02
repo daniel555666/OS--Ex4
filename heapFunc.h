@@ -25,16 +25,21 @@ data_block *last_block;
 
 data_block *find_free_block(size_t size)
 {
+    pthread_mutex_lock(&lock2);
+
     data_block *cur = start_blocks;
     while (cur && !(cur->free && cur->size >= size))
     {
         cur = cur->next;
     }
+    pthread_mutex_unlock(&lock);
     return cur;
 }
 
 data_block* get_new_space(size_t size)
 {
+    pthread_mutex_lock(&lock2);
+
     data_block *new_block =(data_block*) sbrk(0);
     void *request = sbrk(size + sizeof(data_block));
     if (request==(void*)-1)
@@ -49,10 +54,13 @@ data_block* get_new_space(size_t size)
     new_block->size=size;
     new_block->next=NULL;
 
+    pthread_mutex_unlock(&lock2);
     return new_block;
 }
 
 void* my_malloc(size_t size){
+    pthread_mutex_lock(&lock2);
+
     if(size<=0){
         return NULL;
     }
@@ -75,16 +83,19 @@ void* my_malloc(size_t size){
         }
         new_block->free=0;
     }
+    pthread_mutex_unlock(&lock2);
     return (new_block+1);
 }
 
 void my_free(void *p_tofree){
+    pthread_mutex_lock(&lock2);
     if(p_tofree==NULL){
         return ;
     }
     data_block *block_p=((data_block*)p_tofree)-1;
     assert(block_p->free==0);
     block_p->free=1;  //set the block to free
+    pthread_mutex_unlock(&lock2);
 }
 
 void *my_calloc(size_t nitems, size_t size){

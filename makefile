@@ -9,7 +9,8 @@ server: server.o
 
 client: client.o
 	$(CC) $< -o client
-
+test: autoClient test.o
+	$(CC) test.o -o test
 autoClient: autoClient.o
 	$(CC) $< -o autoClient
 %.o: %.c

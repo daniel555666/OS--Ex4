@@ -2,7 +2,7 @@
 CC = gcc
 FLAGS= 
 HEADERS = 
-all: server client
+all: server client test
 
 server: server.o
 	$(CC) $< -o server -lpthread
@@ -10,8 +10,10 @@ server: server.o
 client: client.o
 	$(CC) $< -o client
 
-%.o: %.cpp
+autoClient: autoClient.o
+	$(CC) $< -o autoClient
+%.o: %.c
 	$(CC) -c $< -o $@
 
 clean:
-	rm -f *.o server client
+	rm -f *.o server client test autoClient

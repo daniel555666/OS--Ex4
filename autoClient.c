@@ -88,8 +88,9 @@ int main(int argc, char *argv[])
     strcpy(buf, "Start");
     for (size_t i = 0; i < 30; i++)
     {
-        printf("INPUT> ");
+        
         strcpy(buf, commands[rand() % 4]);
+        printf("INPUT> %s \n", buf);
         if (send(sockfd, buf, strlen(buf), 0) == -1)
         {
             perror("send");

@@ -53,6 +53,7 @@ data_block* get_new_space(size_t size)
 }
 
 void* my_malloc(size_t size){
+    pthread_mutex_lock(&lock2);
     if(size<=0){
         return NULL;
     }
@@ -75,16 +76,19 @@ void* my_malloc(size_t size){
         }
         new_block->free=0;
     }
+    pthread_mutex_unlock(&lock2);
     return (new_block+1);
 }
 
 void my_free(void *p_tofree){
+    pthread_mutex_lock(&lock2);
     if(p_tofree==NULL){
         return ;
     }
     data_block *block_p=((data_block*)p_tofree)-1;
     assert(block_p->free==0);
     block_p->free=1;  //set the block to free
+    pthread_mutex_unlock(&lock2);
 }
 
 void *my_calloc(size_t nitems, size_t size){

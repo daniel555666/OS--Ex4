@@ -1,17 +1,17 @@
 .PHONY: all run clean
-G++ = gcc
+CC = gcc
 FLAGS= 
 HEADERS = 
 all: server client
 
 server: server.o
-	$(G++) $< -o server -lpthread
+	$(CC) $< -o server -lpthread
 
 client: client.o
-	$(G++) $< -o client
+	$(CC) $< -o client
 
 %.o: %.cpp
-	$(G++) -c $< -o $@
+	$(CC) -c $< -o $@
 
 clean:
 	rm -f *.o server client

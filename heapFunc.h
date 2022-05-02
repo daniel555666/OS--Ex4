@@ -1,9 +1,13 @@
 #include <stdlib.h>
-#include <cassert>
+#include <assert.h>
 #include<string.h>
 #include <sys/types.h>
 #include <unistd.h>
 #include<stdio.h>
+#ifndef test
+#define test
+#include "Ex4.h"
+#endif
 
 
 
@@ -89,11 +93,11 @@ void *my_calloc(size_t nitems, size_t size){
     return pt;
 }
 
-int main(){
-    int *arr=(int*)my_malloc(10*sizeof(int));
-    for(int i=0;i<10;i++){
-        arr[i]=i;
-        printf("%d,",arr[i]);
-    }
-    free(arr);
-}
+// int main(){
+//     int *arr=(int*)my_malloc(10*sizeof(int));
+//     for(int i=0;i<10;i++){
+//         arr[i]=i;
+//         printf("%d,",arr[i]);
+//     }
+//     free(arr);
+// }

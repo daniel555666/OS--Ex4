@@ -4,9 +4,8 @@
 #ifndef test
 #define test
 #include "Ex4.h"
-#include "heapFunc.cpp"
 #endif
-
+void* my_malloc(size_t size);
 typedef struct _NODE_ {
     char* txt;
     struct _NODE_ *next;

@@ -1,0 +1,434 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Wed May 11 13:38:37 2022
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+SSH_AGENT_LAUNCHER = gnome-keyring
+# environment
+SNAP_INSTANCE_KEY = 
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-aae62b01-d1de-4738-896d-e00d0e1d7b8a.sock
+# environment
+VSCODE_CWD = /home/dvir/Documents/OS/OS--Ex4
+# default
+MAKE_COMMAND := make
+# environment
+QT_ACCESSIBILITY = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/95/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/dvir/Documents/OS/OS--Ex4
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/dvir/.config/Code/CachedData/57fd6d0195bb9b9d1b49f6da5db789060795de47
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.HT6QL1
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# environment
+GNOME_TERMINAL_SERVICE = :1.102
+# makefile
+MAKEFLAGS = pqrR
+# environment
+DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=3204a932dc002dbd8f91ac18627b9216
+# makefile
+CURDIR := /home/dvir/Documents/OS/OS--Ex4
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# environment
+WAYLAND_DISPLAY = wayland-0
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# makefile (from 'makefile', line 1)
+MAKEFILE_LIST := makefile
+# environment
+SNAP_REEXEC = 
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 2856
+# environment
+XDG_SESSION_TYPE = wayland
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'makefile', line 3)
+FLAGS = 
+# environment
+SESSION_MANAGER = local/dvir-Lenovo-Legion-5-15IMH05H:@/tmp/.ICE-unix/1336,unix/dvir-Lenovo-Legion-5-15IMH05H:/tmp/.ICE-unix/1336
+# automatic
+*F = $(notdir $*)
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=3204a932dc002dbd8f91ac18627b9216
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=ibus
+# makefile (from 'makefile', line 4)
+HEADERS = 
+# environment
+SHLVL = 1
+# environment
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/12ec47df_052d_4951_8bfb_eb244389adec
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+SNAP_COOKIE = NARbyvBvq3JI7GrdKSaddMuy6B5CycDtcTgXnO0gwYRsoxK5Olk3
+# environment
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+# default
+MAKEFILES := 
+# environment
+LANGUAGE = en_IL:en
+# automatic
+^F = $(notdir $^)
+# environment
+SNAP_USER_COMMON = /home/dvir/snap/code/common
+# environment
+SNAP = /snap/code/95
+# environment
+SNAP_REVISION = 95
+# environment
+SNAP_REAL_HOME = /home/dvir
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = dvir
+# environment
+GNOME_SETUP_DISPLAY = :1
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# automatic
+?F = $(notdir $?)
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = ubuntu
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = dvir
+# environment
+SNAP_ARCH = amd64
+# makefile
+.DEFAULT_GOAL := all
+# environment
+SYSTEMD_EXEC_PID = 1336
+# environment
+DISPLAY = :0
+# environment
+USER = dvir
+# environment
+GTK_MODULES = gail:atk-bridge
+# default
+MAKE_VERSION := 4.3
+# environment
+DISABLE_WAYLAND = 1
+# environment
+SNAP_DATA = /var/snap/code/95
+# environment
+SNAP_CONTEXT = NARbyvBvq3JI7GrdKSaddMuy6B5CycDtcTgXnO0gwYRsoxK5Olk3
+# environment
+DBUS_STARTER_BUS_TYPE = session
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+COLORTERM = truecolor
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/dvir/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/dvir
+# environment
+QT_IM_MODULE = ibus
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-c7b38863-1.67.0-main.sock
+# environment
+TERM = xterm-256color
+# environment
+SNAP_NAME = code
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/95/usr/share/glib-2.0/schemas
+# environment
+IM_CONFIG_PHASE = 1
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# environment
+SNAP_VERSION = 57fd6d01
+# default
+SUFFIXES := 
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+VTE_VERSION = 6800
+# environment
+SNAP_COMMON = /var/snap/code/common
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# makefile (from 'makefile', line 2)
+CC = gcc
+# environment
+SNAP_USER_DATA = /home/dvir/snap/code/95
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+GDMSESSION = ubuntu
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# variable set hash-table stats:
+# Load=123/1024=12%, Rehash=0, Collisions=13/153=8%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2050, inode 4201755): 22 files, no impossibilities.
+
+# 22 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+%.o: %.c
+#  recipe to execute (from 'makefile', line 17):
+	$(CC) -c $< -o $@
+
+# 1 implicit rules, 0 (0.0%) terminal.
+# Files
+
+client: client.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-05-03 18:36:33.588041461
+#  File has been updated.
+#  Successfully updated.
+ 
+#  recipe to execute (from 'makefile', line 11):
+	$(CC) $< -o client
+
+client.o: client.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'client'
+#  Last modified 2022-05-03 18:36:33.57604146
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 17):
+	$(CC) -c $< -o $@
+
+server.o: server.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'server'
+#  Last modified 2022-05-03 18:36:33.496041457
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 17):
+	$(CC) -c $< -o $@
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 20):
+	rm -f *.o server client test autoClient
+
+autoClient: autoClient.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-05-03 18:36:33.652041463
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 15):
+	$(CC) $< -o autoClient
+
+# Not a target:
+server.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-02 16:27:54.785105073
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+test.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-02 15:55:21.138512
+#  File has been updated.
+#  Successfully updated.
+
+server: server.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-05-03 18:36:33.55604146
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 8):
+	$(CC) $< -o server -lpthread
+
+autoClient.o: autoClient.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'autoClient'
+#  Last modified 2022-05-03 18:36:33.608041462
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 17):
+	$(CC) -c $< -o $@
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+client.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-02 14:57:58.941798
+#  File has been updated.
+#  Successfully updated.
+
+all: server client test
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+run:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+autoClient.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-02 16:29:42.279129713
+#  File has been updated.
+#  Successfully updated.
+
+test: autoClient test.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-05-03 18:36:33.684041465
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 13):
+	$(CC) test.o -o test
+
+test.o: test.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'test'
+#  Last modified 2022-05-03 18:36:33.672041464
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 17):
+	$(CC) -c $< -o $@
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-02 15:57:41.523894
+#  File has been updated.
+#  Successfully updated.
+
+.PHONY: all run clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=19/1024=2%, Rehash=0, Collisions=1/58=2%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 32 / storage = 254 B / avg = 7 B
+# current buf: size = 8162 B / used = 254 B / count = 32 / avg = 7 B
+
+# strcache performance: lookups = 70 / hit rate = 54%
+# hash-table stats:
+# Load=32/8192=0%, Rehash=0, Collisions=0/70=0%
+# Finished Make data base on Wed May 11 13:38:37 2022
+
+ 

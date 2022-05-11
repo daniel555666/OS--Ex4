@@ -1,0 +1,12 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/dvir/Documents/OS/OS--Ex4'
+gcc -c server.c -o server.o
+gcc server.o -o server -lpthread
+gcc -c client.c -o client.o
+gcc client.o -o client
+gcc -c autoClient.c -o autoClient.o
+gcc autoClient.o -o autoClient
+gcc -c test.c -o test.o
+gcc test.o -o test
+make: Leaving directory '/home/dvir/Documents/OS/OS--Ex4'
+ 

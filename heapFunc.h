@@ -91,7 +91,7 @@ void my_free(void *p_tofree){
     pthread_mutex_unlock(&lock2);
 }
 
-void *my_calloc(size_t nitems, size_t size){
+void *calloc(size_t nitems, size_t size){
     void* pt= my_malloc(nitems*size);
     memset(pt,0,size);
     return pt;
